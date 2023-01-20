@@ -33,21 +33,17 @@
       alert("Data will be lost if you leave the page, are you sure?");
       };
 
-      window.onkeydown = function(event) {
-        if (event.keyCode === 116) {
-          window.location.reload();
-        }
       };
     </script>
 
     <section class="bg-img">
       <div style="font-size: 24px;" class="cn">
-        JP Morgan Chase &co.
+        Employee OnBoarding Portal
       </div>
       <div action="/action_page.php" class="login-form">
         <h2 id="login-font">LOGIN</h2>
         <input type="text" placeholder="Employee-Id" name="Employee-Id" required>
-        <input type="email" placeholder="employee@jpmorgan.ac.in" name="Email" required>
+        <input type="email" placeholder="employee@company.ac.in" name="Email" required>
         <input type="password" placeholder="Password" name="psw" required>
         <a class="forgot-password" href="#">Forgot password?</a>
         <button type="submit" class="btn btn-lg">
