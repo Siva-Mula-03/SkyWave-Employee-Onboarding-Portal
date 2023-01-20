@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Documents</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- css styling -->
+    <style>
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #ECE8DD;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            float: right;
+        }
+
+
+
+        input[type="submit"]:hover {
+            background-color: #004c99;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 0 0 20%;
+            height: 0;
+            padding-bottom: 20%;
+            margin: 10px;
+            border: 5px solid #000;
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="home_page.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3066f751f3.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dosis:wght@300&family=Kalam&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dosis:wght@300&family=Kalam&display=swap');
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <section id="first-title">
+        <h3 class="company-title">J.P Morgan Chase & Co.</h3>
+    </section> -->
+    <section id="navigation-bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home_page.html">J.P. Morgan Chase & Co.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right-items">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="todoo.html"><i class="menu-icon fa-solid fa-list-check"></i> Checklist</a></li>
+                            <li><a class="dropdown-item" href="my_team.html"><i class="menu-icon fa fa-fw fa-users"></i>My Team</a></li>
+                            <li><a class="dropdown-item" href="insights.html"><i class="menu-icon fa fa-fw fa-line-chart"></i>Insights</li></a>
+                            <li><a class="dropdown-item" href="documentpage.html"><i class="menu-icon fa fa-fw fa-file"></i>Documents</li></a>
+                            <li><a class="dropdown-item" href="announcements.html"><i class="menu-icon fa fa-bullhorn"></i>Announcements</li></a>
+                            <li><a class="dropdown-item" href="Reports.html"><i class="menu-icon fa fa-fw fa-user"></i>Reports</li></a>
+                            <li><a class="dropdown-item" href="timeline.html"><i class="menu-icon fa fa-safari"></i>Timeline</a></li>
+                            <li><a class="dropdown-item" href="forms.html"><i class="menu-icon fa fa-file-text-o"></i>Forms</a></li>
+                            <li><a class="dropdown-item" href="c12.html"><i class="menu-icon fa fa-table"></i>Calender</a></li>
+                            <li><a class="dropdown-item" href="aboutus.html"><i class="fa fa-fw fa-buysellads"></i> About</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Latest Notices</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Projects(Session-S23)
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Predictive maintenance for manufacturing equipment using machine learning.</a></li>
+                                <li><a class="dropdown-item" href="#">Anomaly detection in financial transactions using statistical methods.</a></li>
+                                <li><a class="dropdown-item" href="#">An automated testing framework for continuously testing and monitoring web applications</a></li>
+                                <li><a class="dropdown-item" href="#">A machine learning platform for building and deploying models in a production environment</a></li>
+                                <li><a class="dropdown-item" href="#">A web crawler for scraping and indexing data from the internet</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-left-items">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-left-items">
+                            <dialog id="d">
+                                <p>1."Payroll deadline approaching: Please ensure all time sheets are submitted by the
+                                    end of the week."</p>
+                                <p>2."Reminder: Benefits enrollment period ends next Friday. Don't miss your chance to
+                                    enroll or make changes to your coverage."</p>
+                                <p>3."Upcoming company-wide meeting: Please mark your calendars for next Tuesday at
+                                    10am. A link to the virtual meeting will be sent out next week."
+                                <p>4."New policy update: Please review the updated company handbook, which can be found
+                                    in the Employee Portal."</p>
+                                </p>
+                                <button id="n1" onclick="d.close()">X</button>
+                            </dialog>
+                            <li class="nav-item">
+                                <button type="button" onclick="d.showModal()" class="icon-button">
+                                    <span class="material-icons">notifications</span>
+                                    <span class="icon-button__badge">4</span>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq_page.html"><i
+                                        class="fa-solid fa-circle-question fa-lg"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-circle-user fa-lg"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="prof.html"><i
+                                                class="menu-icon fa-regular fa-user"></i>Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="login_pag.html"><i
+                                                class="menu-icon fa-solid fa-right-from-bracket"></i>Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://play-lh.googleusercontent.com/9XKD5S7rwQ6FiPXSyp9SzLXfIue88ntf9sJ9K250IuHTL7pmn2-ZB0sngAX4A2Bw4w"
+                height=200px alt="PDF VIEWER">
+            <center>
+                <a href="#">My_resume.pdf</a>
+            </center>
+        </div>
+        <div class="box">
+            <img src="https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ"
+                height=200px alt="DOCS VIEWER">
+            <center>
+                <a href="#">resume.docx</a>
+            </center>
+        </div>
+        <div class="box">
+            <img src="https://play-lh.googleusercontent.com/37EzETO6gZyKmCg2kBIFX1e9gkubxZrVa5fHJ6yOaa7VvEShHjKv2RdtwnZt9Sk258s"
+                height=200px alt="EXCEL VIEWER">
+            <center>
+                <a href="#">stock_record.csv</a>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <form method="post" enctype="multipart/form-data">
+        <h2>Add Document</h2>
+        <label for="name">File Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="document">Document:</label>
+        <input type="file" id="document" name="document" accept=".pdf,.doc,.docx" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <div class="cont">
+            <p style="font-size: 20px; margin-bottom: 1%;">Connect with us!</p>
+            <p style="font-size: 13px;" href="#">JP Morgan Chase & C0.</p>
+            <a style="padding-right: 20px; color: #0AA1DD"
+                href="https://twitter.com/jpmorgan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="fa fa-twitter bottom-icons" alt="twitter" target="_blank"></a>
+            <a style="padding-right: 20px; color: #2155CD" href="https://in.linkedin.com/company/jpmorganchase"
+                class="fa fa-linkedin bottom-icons" alt="linkedin" target="_blank"></a>
+            <a style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);" "href="
+                https://www.instagram.com/jpmorgan/?hl=en" class="fa fa-instagram" alt="instagram" target="_blank"></a>
+            <a style="padding-left: 20px; color:#DC0000" href="https://www.youtube.com/jpmorgan"
+                class="fa fa-youtube bottom-icons" alt="youtube" target="_blank"></a>
+            <br>
+            <br>
+            <span class="glyphicon glyphicon-copyright-mark"></span>
+            <span>Developed with</span> <i class='fa fa-heart' style='color:red'></i> <span>by SMS Team</span>
+            <br>
+            <br>
+            <span>&#169 2023 All rights Reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>
